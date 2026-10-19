@@ -1,0 +1,37 @@
+{
+  "name": "@jitesh-ss/meta-hive-extension",
+  "version": "0.1.0",
+  "description": "Meta-Hive pi extension - multi-agent hive orchestration",
+  "author": "jitesh-ss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitesh-ss/meta-hive.git"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "pi",
+    "extension",
+    "hive",
+    "multi-agent"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.0.0",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

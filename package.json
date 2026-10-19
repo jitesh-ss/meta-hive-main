@@ -1,0 +1,51 @@
+{
+  "name": "meta-hive",
+  "version": "0.1.0",
+  "description": "Multi-agent hive orchestration system for the pi coding agent",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "meta-hive": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node dist/index.js --help"
+  },
+  "keywords": [
+    "pi",
+    "coding-agent",
+    "hive",
+    "multi-agent",
+    "orchestration"
+  ],
+  "author": "jitesh-ss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitesh-ss/meta-hive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jitesh-ss/meta-hive/issues"
+  },
+  "homepage": "https://github.com/jitesh-ss/meta-hive#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.49",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.75.5",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "SKILL.md"
+  ]
+}
